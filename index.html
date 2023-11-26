@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/0a/f0/c5/0af0c55ef67a89a0a4ee28fb6e98e4ac--stay-the-night-the-nights.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise N Dine</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <nav class="navbar" id="uu">
+        <img class="img" src="data:image/png;base64,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" alt="logo">
+        <ul>
+            <li class="gum"><a class="link"href="#home">HOME</a></li>
+            <li class="gum"><a class="link" href="#gos">ABOUT US</a></li>
+            <li class="gum"><a class="link" href="#high">MENU</a></li>
+            <li class="gum"><a class="link" href="#enter">OUTLETS</a></li>
+    
+        </ul></nav>
+    </div>
+    <div id="pict"> <img id="ram" src="./imoges/floodoriginal.jpg" alt="image"></div>
+    
+   <div id="button"><a id="ORDER" href=""><b>ORDER  NOW</b></a>
+    
+   </div>
+   <br>
+   <br>
+   <br>
+   <div id="amo">
+       <img id="chk" src="https://media.olivegarden.com/images/site/ext/pages/_promotions/home/specials-mobile-072621.jpg" alt="image">
+    
+   </div>
+   <div id="gos">
+    <h1 id="the">THE COMFORT</h1>
+    <br><h1 id="you">YOU CRAVE</h1>
+    <p id="para">Rise & Dine humble begining started with a passion to create the best food items to capture the crisp and vibrant tastes of our delicious foods. Our pioneering process brings you purity of tastes.
+        
+        we are a tight-knit,fun-loving,devoted team of local cooks spreading the gospel of good times and good food. <br>we cook,we tell stories,we deliver informative culnary demonstrations and lectures,but most of all..we treat every event like you're a guest at our dinner table.join us!!
+    </p>
+    <a  ID="c1" href=""><b>LEARN MORE</b></a>
+   </div>
+   <h1 id="high">MENU HIGHLIGHTS</h1>
+   <div class="mam">
+    
+    <img class="id""first" src="./imoges/round1-removebg-preview.png" alt="image">
+     <!-- <button id="bu">PIZZA</button> -->
+    <img class="sec" src="./imoges/round2.0-removebg-preview (1).png" alt="image">
+    <img class="thi" src="./imoges/round_5__1_-removebg-preview.png" 
+    alt="">
+    <button id="bu">PIZZA</button>
+    <button id="cu">DESSERTS</button>
+    <button id="du">BURGARS</button>
+
+    </div>
+    <div>
+
+     <img class="for" src="./imoges/round_9-removebg-preview.png" alt="image">
+    <img class="fif" src="./imoges/round7-removebg-preview.png" alt="image">
+    <img class="six" src="./imoges/round8-removebg-preview.png" alt="image">
+    <button id="eu">COMBO CRISPS</button>
+    <button id="fu">TACOS DE LENGUA</button>
+    <button id="gu">MOMOS</button>
+     </div>
+     <div id="hr">
+        <img id="zz" src="https://static.vecteezy.com/system/resources/previews/006/849/504/original/abstract-background-with-soft-gradient-color-and-dynamic-shadow-on-background-background-for-wallpaper-eps-10-free-vector.jpg" alt="image">
+     </div>
+     <div id="woo"><h1>Deal Of The Day</h1></div>
+     <div id="pop">
+        <img id="bb" src="https://www.simplyrecipes.com/thmb/zno3SGH222fXBenKhkIA0zt_zEw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/VeggieBurgersPlated20221127-4Z9A6582-2-ce1c47195a6847e48f9305e853f8067f.jpg" alt="">
+        <h2 id="bur">Banquet <br> Burger</h2>
+        <button id="eed">Add item</button>
+        <h1 id="r1">₹110.50</h1>
+        <div id="nop">
+            <img id="roop" src="https://img.taste.com.au/L0c_BGFL/taste/2016/11/cappuccino-cupcakes-49587-1.jpeg" alt="">
+            <h2 id="sur">Cappuccino <br> Cupcakes
+            </h2>
+            <button id="eec">Add item</button>
+            <h1 id="r2">₹90.25</h1>
+            <div id="nop">
+                <img id="roop" src="https://tb-static.uber.com/prod/image-proc/processed_images/a669c09b61489445e993a8d340829f57/c73ecc27d2a9eaa735b1ee95304ba588.jpeg" alt="">
+                <h2 id="sur">thalassery <br> Biriyani
+                </h2>
+                <button id="eef">Add item</button>
+                <h1 id="r2">₹120</h1>
+                
+                
+            </div>
+    
+            
+            
+        </div>
+       
+
+
+        
+     </div>
+     <div id="enter"> <img id="exit" src="https://plainbackground.com/plain1024/c0c7e1.png" alt="">
+        <div id="demo"><h1>Our Outlets </h1>
+            <div id="ghost">
+                <h3 id="kak">Rise & Dine-kakkanad</h3>
+                <p id="fruit">K C Tower, Near Anna Restaurant,
+
+                    CSEZ, Seaport - Airport Rd,
+                    
+                    Kakkanad, Kerala 682037
+                    
+                    Ph:9656533366
+                    
+                    </p>
+                    <button id="tton">View Map</button>
+
+            </div>
+            <div id="vamp">
+                <h3 id="tri">Rise & Dine-Trissur</h3>
+                <p id="veg">Near Retrica, Elctra Complex
+
+                    Nethaji Road,Westfort Junction
+                    
+                    Thrissur, Kerala 680004
+                    
+                    Ph:97781 11637
+                    
+                    
+                    
+                    </p>
+                    <button id="tron">View Map</button>
+
+            </div>
+            <div id="devil">
+                <h3 id="cali">Rise & Dine-Calicut</h3>
+                <p id="nuts">Capital Trade Center
+
+                    Near Thondayad Flyover,
+                    
+                    Bypass Road, Calicut, Kerala 673016
+                    
+                    Ph:+91 70341 08968
+                    
+                    
+                    
+                    
+                    
+                    </p>
+                    <button id="tson">View Map</button>
+
+            </div>
+            <div id="demon">
+                <h3 id="kan">Rise & Dine-Kannur</h3>
+                <p id="juice">First floor, Century Plaza
+
+                    Thavakkara,kannur, Kerala 670001
+                    
+                    Ph:+91 9995409517
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p>
+                    <button id="tpon">View Map</button>
+
+            </div>
+            <div id="anna">
+                <h3 id="aadu">Rise & Dine-Adoor</h3>
+                <p id="plum">Athira building, One way road
+
+                    Opposite municipal Court, Adoor
+                    
+                    Ph:+91 9400910920
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p>
+                    <button id="tzon">View Map</button>
+
+            </div>
+            <div id="alice">
+                <h3 id="veedu">Rise & Dine-Aluva</h3>
+                <p id="mion">Minus Floor, Tamarind Rajadhani, Pulinchode, Aluva, Edathala, Ernakulam-683101
+                    Ph: +91 8089851012
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p>
+                    <button id="txon">View Map</button>
+
+            </div>
+
+
+
+
+
+
+        </div>
+    
+    
+    </div>
+     <!-- <h1 id="j1">Our Outlets</h1>
+     <div id="yup">
+        <i id="l1" class="fa-solid fa-location-dot fa-4x"></i>
+        <h2 id="gru"> Rise & Dine- Kakkanad</h2>
+        <p id="tutu">K C Tower, Near Anna Restaurant,<br>
+
+            CSEZ, Seaport - Airport Rd,<br>
+            
+            Kakkanad, Kerala 682037
+            
+            Ph:9656533354
+            
+            </p>
+            <button id="rec">View Map</button>
+
+            <i id="l2" class="fa-solid fa-location-dot fa-4x"></i>
+            <h2 id="grx"> Rise & Dine- Kakkanad</h2>
+            <p id="tumu">K C Tower, Near Anna Restaurant,<br>
+    
+                CSEZ, Seaport - Airport Rd,<br>
+                
+                Kakkanad, Kerala 682037
+                
+                Ph:9656533354
+                
+                </p>
+                <button id="reb">View Map</button>
+     -->
+            <!-- <div id="mup">
+                <i id="l2" class="fa-solid fa-location-dot fa-4x"></i>
+                <h2 id="grs"> Rise & Dine- Kozhikode</h2>
+                <p id="turu">capital centre, Near thondayad flyover,<br>
+        
+                    mg road, eastport junction,<br>
+                    
+                    calicut, Kerala 6820432
+                    
+                    Ph:9656533569
+                    
+                    </p>
+                    <button id="ree">View Map</button>
+        
+
+                    <div id="nup">
+                        <i id="l3" class="fa-solid fa-location-dot fa-4x"></i>
+                        <h2 id="grx"> Rise & Dine- Trissur</h2>
+                        <p id="tumu">electra complex, Near burger space,<br>
+                
+                            nethaji road, westport junction,<br>
+                            
+                            trissur, Kerala 682056
+                            
+                            Ph:9656533456
+                            
+                            </p>
+                            <button id="ree">View Map</button>
+                 -->
+                            <!-- <div id="rup">
+                                <i id="l4" class="fa-solid fa-location-dot fa-4x"></i>
+                                <h2 id="gry"> Rise & Dine- Trissur</h2>
+                                <p id="tubu">electra complex, Near burger space,<br>
+                        
+                                    nethaji road, westport junction,<br>
+                                    
+                                    trissur, Kerala 682056
+                                    
+                                    Ph:9656533456
+                                    
+                                    </p>
+                                    <button id="ree">View Map</button>
+         -->
+
+     </div>
+     <div id="spot">
+     <img id="coff" src="https://img.freepik.com/free-photo/design-space-decorated-with-leaves-website-banner-template_53876-129927.jpg?w=1380&t=st=1691415185~exp=1691415785~hmac=dbdcb0d879d2c5f3dc9e9119ee43229528e11b382eba4b460ea58691f3e057a6" alt="">
+     <h2 id="out">Services</h2>
+     <h4 id="f1">Delivery</h4>
+     <h4 id="f2">Catering</h4>
+     <h4 id="f3">Payment</h4>
+     <h4 id="f4">Serving</h4>
+     <h2 id="res">Responsibility</h2>
+     <h4 id="s1">Community</h4>
+     <h4 id="s2">Environmental</h4>
+     <h4 id="s3">Diversity</h4>
+     <h4 id="s4">Ethical Sourcing</h4>
+
+     <h2 id="gif">Gifts & Offers</h2>
+     <h4 id="x1">Buy Gift Cards</h4>
+     <h4 id="x2">Check Gift Cards and Balances</h4>
+     <h4 id="x3">Specials</h4>
+     <h2 id="max">Social Media</h2>
+     
+
+
+     
+
+     
+
+
+
+     
+     </div>
+     <div id="run">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i id="bum" class="fa-brands fa-instagram fa-2x"></i>
+        <i id="fum" class="fa-brands fa-twitter fa-2x"></i>
+        <i id="tum" class="fa-brands fa-whatsapp  fa-2x"></i>
+        <i id="v1" class="fa-brands fa-linkedin fa-2x"></i>
+        <i id="v2" class="fa-brands fa-telegram fa-2x"></i>
+        <p id="last"> ©2023 Rise & Dine Restaurant all rights reserved </p>
+
+    
+     </div>
+
+   
+   
+   
+   
+
+    
+</body>
+</html>
